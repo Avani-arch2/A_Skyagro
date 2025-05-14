@@ -1,0 +1,136 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0fdf4;
+}
+
+
+
+header {
+    background-color: #166534; /* deep green */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+main {
+    padding: 20px;
+    background-color: #f0fdf4
+    flex: 1;
+    
+}
+
+.clay-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 8px 8px 16px rgba(200, 230, 201, 1), -8px -8px 16px rgba(255, 255, 255, 1); /* green-tinted clay shadow */
+    transition: 0.3s;
+}
+
+.clay-button.blue {
+    background-color: #c7eae4;
+}
+
+.clay-button.green {
+    background-color: #a7e8bd;
+}
+
+.clay-button.pink {
+    background-color: #fcbcb8;
+}
+
+.clay-button.yellow {
+    background-color: #ffd972;
+}
+
+
+.clay-button:hover {
+    box-shadow: inset 4px 4px 8px rgba(163, 230, 153, 1), inset -4px -4px 8px rgba(255, 255, 255, 1);
+    background: #bbf7d0;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #d1d5db;
+}
+
+th {
+    background-color: #22c55e; /* bright green table header */
+    color: white;
+    font-weight: 700;
+}
+
+tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive Layouts */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.25rem;
+    }
+
+    .clay-card {
+        padding: 15px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .grid-cols-1 {
+        grid-template-columns: 1fr;
+    }
+
+    .table-container table {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+
+    .clay-card {
+        padding: 12px;
+    }
+
+    .table-container table {
+        font-size: 12px;
+    }
+
+    .clay-button {
+        padding: 8px 16px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
